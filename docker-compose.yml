@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  db:
+    image: mysql
+    environment:
+       MYSQL_DATABASE: vts_test
+       MYSQL_ROOT_PASSWORD: admin
+    volumes:
+      - /srv/db:/var/lib/mysql
+    restart: always
+
+  redis:
+    image: redis
+    restart: always
+
+  memcached:
+    image: memcached
+    restart: always
+
+  web:
+    build: ./vts_test
+    ports:
+    - "8000:8000"
+    volumes:
+    - ./vts_test:/vts_test
+    - /tmp/logs:/tmp
+    command: bash start.sh
+    links:
+    - redis
+    - memcached
+    - db
+    depends_on:
+      - db
+    restart: always
+
+  nginx:
+    build: ./nginx
+    ports:
+    - "8008:80"
+    volumes:
+    - ./vts_test/static:/usr/share/nginx/html/static:ro
+    - ./vts_test/media:/usr/share/nginx/html/media:ro
+    links:
+    - web
+    depends_on:
+    - web
+    restart: always
