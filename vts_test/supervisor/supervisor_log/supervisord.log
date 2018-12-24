@@ -1,0 +1,9 @@
+2018-12-24 06:19:37,292 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2018-12-24 06:19:37,292 INFO Included extra file "/etc/supervisor/conf.d/vts_squad_worker.conf" during parsing
+2018-12-24 06:19:37,315 INFO RPC interface 'supervisor' initialized
+2018-12-24 06:19:37,326 INFO RPC interface 'supervisor' initialized
+2018-12-24 06:19:37,326 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2018-12-24 06:19:37,327 INFO daemonizing the supervisord process
+2018-12-24 06:19:37,327 INFO supervisord started with pid 31
+2018-12-24 06:19:38,329 INFO spawned: 'gerrinfo' with pid 32
+2018-12-24 06:19:39,963 INFO success: gerrinfo entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

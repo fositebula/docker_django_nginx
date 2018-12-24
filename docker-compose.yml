@@ -25,6 +25,8 @@ services:
     volumes:
     - ./vts_test:/vts_test
     - /tmp/logs:/tmp
+    - ./vts_test/supervisor/supervisor_conf/:/etc/supervisor/
+    - ./vts_test/supervisor/supervisor_log/:/var/log/supervisor/
     command: bash start.sh
     links:
     - redis
