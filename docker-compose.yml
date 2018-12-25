@@ -39,7 +39,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-    - "8008:80"
+    - "80:80"
     volumes:
     - ./vts_test/static:/usr/share/nginx/html/static:ro
     - ./vts_test/media:/usr/share/nginx/html/media:ro
