@@ -10,4 +10,5 @@
 python manage.py collectstatic --noinput
 python manage.py makemigrations
 python manage.py migrate
+supervisord
 gunicorn vts_test.wsgi:application -c gunicorn.conf
