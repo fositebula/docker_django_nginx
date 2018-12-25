@@ -287,7 +287,8 @@ def job_resubmit(request):
     jid = request.GET.get('jid')
     print jid
     job = Job.objects.get(id=jid)
-    new_job = Job.objects.create()
+
+    new_job = Job.objects.create(vts_version=job.vts_version, device_type=job.device_type)
 
     new_job.user = job.user
     new_job.verify_url = job.verify_url
