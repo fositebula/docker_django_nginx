@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116d7049-3989-446f-ad6f-8dcf4363d700" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/git同步_readme.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/views.py" afterPath="$PROJECT_DIR$/vts_test/vts_squad/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,16 +45,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="342">
               <caret line="290" column="89" lean-forward="false" selection-start-line="290" selection-start-column="89" selection-end-line="290" selection-end-column="89" />
               <folding>
                 <element signature="e#3805#10812#0" expanded="false" />
                 <element signature="e#12684#12727#0" expanded="false" />
                 <element signature="e#12768#15969#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="git同步_readme.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/git同步_readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,6 +152,7 @@
         <option value="$PROJECT_DIR$/deploy_readme.txt" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/verify_downloader.py" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/views.py" />
+        <option value="$PROJECT_DIR$/git同步_readme.txt" />
       </list>
     </option>
   </component>
@@ -183,38 +194,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="docker_django_nginx_git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker_django_nginx_git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker_django_nginx_git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vts_test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker_django_nginx_git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker_django_nginx_git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vts_test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vts_squad" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -791,13 +770,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="342">
           <caret line="290" column="89" lean-forward="false" selection-start-line="290" selection-start-column="89" selection-end-line="290" selection-end-column="89" />
           <folding>
             <element signature="e#3805#10812#0" expanded="false" />
             <element signature="e#12684#12727#0" expanded="false" />
             <element signature="e#12768#15969#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git同步_readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
