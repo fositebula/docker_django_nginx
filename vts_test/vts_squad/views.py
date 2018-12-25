@@ -347,7 +347,7 @@ def job_info_detail(request, jid):
                     break
                 if not schedule:
                     schedule = [0]
-            return render(request, 'job_info.html', {'schedule':schedule[0]})
+            return render(request, 'job_info.html', {'schedule': schedule[0], 'job': job})
 
 
     jr = requests.get(job.lava_job).json()
