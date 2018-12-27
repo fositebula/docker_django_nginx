@@ -145,9 +145,23 @@ class DelployImgs(models.Model):
     def __unicode__(self):
         return self.name
 
+def get_lava_device_type():
+    import xmlrpc.client
+    username = 'apuser'
+    token = '4q0arwon8xzacq89l4572l481d3h0xojhn3p2b27pj0smh64lfgzh4iy3f6670jp1undg3uq0j50qixnz4u46b3ry8csm8q0qc8f2ditatw4j4o66chw3cq0bkps0d5e'
+    hostname = '10.0.70.142'
+    server = xmlrpc.client.ServerProxy("http://%s:%s@%s/RPC2" % (username, token, hostname))
+    types =  server.scheduler.all_device_types()
+    l = []
+    for i, type in enumerate(types):
+        l.append((type['name'], type['name']))
+
+    return tuple(l)
+
 class LavaDeviceType(models.Model):
 
-    name = models.CharField(max_length=8*8)
+    LAVA_DEVICE_TYPE_CHOICE = get_lava_device_type()
+    name = models.CharField(max_length=8*8, choices=LAVA_DEVICE_TYPE_CHOICE)
     date_time = models.DateTimeField(auto_now=True)
     pac_url = models.CharField(max_length=256, default='')
     template = models.TextField(max_length=1024*10, default='')
