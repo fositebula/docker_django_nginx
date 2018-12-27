@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116d7049-3989-446f-ad6f-8dcf4363d700" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/models.py" afterPath="$PROJECT_DIR$/vts_test/vts_squad/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +21,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="359" column="22" lean-forward="false" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="22" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+                <element signature="e#3805#10812#0" expanded="false" />
+                <element signature="e#12684#12727#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+            <state relative-caret-position="261">
+              <caret line="152" column="22" lean-forward="false" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
               <folding>
                 <element signature="e#321#786#0" expanded="false" />
                 <element signature="e#824#1454#0" expanded="false" />
@@ -34,8 +49,7 @@
                 <element signature="e#3803#3957#0" expanded="false" />
                 <element signature="e#4006#4152#0" expanded="false" />
                 <element signature="e#4191#4472#0" expanded="false" />
-                <element signature="e#4506#4980#0" expanded="false" />
-                <element signature="e#5751#6102#0" expanded="false" />
+                <element signature="e#5743#6094#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,6 +76,7 @@
       <find>64</find>
       <find>localhost</find>
       <find>ForeignKey</find>
+      <find>xmlrpclib</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/vts_test</dir>
@@ -671,14 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/git_readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -692,26 +699,6 @@
         <state relative-caret-position="276">
           <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git同步_readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="290" column="89" lean-forward="false" selection-start-line="290" selection-start-column="89" selection-end-line="290" selection-end-column="89" />
-          <folding>
-            <element signature="e#3805#10812#0" expanded="false" />
-            <element signature="e#12684#12727#0" expanded="false" />
-            <element signature="e#12768#15969#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,10 +746,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/git_readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git同步_readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="359" column="22" lean-forward="false" selection-start-line="359" selection-start-column="13" selection-end-line="359" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#3805#10812#0" expanded="false" />
+            <element signature="e#12684#12727#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        <state relative-caret-position="261">
+          <caret line="152" column="22" lean-forward="false" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
           <folding>
             <element signature="e#321#786#0" expanded="false" />
             <element signature="e#824#1454#0" expanded="false" />
@@ -772,8 +787,7 @@
             <element signature="e#3803#3957#0" expanded="false" />
             <element signature="e#4006#4152#0" expanded="false" />
             <element signature="e#4191#4472#0" expanded="false" />
-            <element signature="e#4506#4980#0" expanded="false" />
-            <element signature="e#5751#6102#0" expanded="false" />
+            <element signature="e#5743#6094#0" expanded="false" />
           </folding>
         </state>
       </provider>

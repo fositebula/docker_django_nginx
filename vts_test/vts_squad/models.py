@@ -146,11 +146,11 @@ class DelployImgs(models.Model):
         return self.name
 
 def get_lava_device_type():
-    import xmlrpc.client
+    import xmlrpclib
     username = 'apuser'
     token = '4q0arwon8xzacq89l4572l481d3h0xojhn3p2b27pj0smh64lfgzh4iy3f6670jp1undg3uq0j50qixnz4u46b3ry8csm8q0qc8f2ditatw4j4o66chw3cq0bkps0d5e'
     hostname = '10.0.70.142'
-    server = xmlrpc.client.ServerProxy("http://%s:%s@%s/RPC2" % (username, token, hostname))
+    server = xmlrpclib.ServerProxy("http://%s:%s@%s/RPC2" % (username, token, hostname))
     types =  server.scheduler.all_device_types()
     l = []
     for i, type in enumerate(types):
