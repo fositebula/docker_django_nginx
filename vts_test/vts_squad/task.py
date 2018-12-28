@@ -47,7 +47,7 @@ def submit_to_squad(jobid, verifyurl, lava_job, qa_server_api, qa_server_base, q
     print os.getcwd()
     job = Job.objects.get(id=jobid)
     verifyid, files = verify_dowloader(verifyurl)
-    pre_url = 'http://10.0.70.92:8008/static/vts_squad/android_imgs/'
+    pre_url = 'http://worker16/static/vts_squad/android_imgs/'
 
     r = requests.get(pre_url+verifyid+'/'+verifyurl.split('/')[-1]+'.log')
     job.download_log = r.content

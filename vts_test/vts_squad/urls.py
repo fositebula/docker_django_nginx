@@ -1,6 +1,8 @@
 from django.conf.urls import url
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.static import serve
+
 import views
 
 
@@ -13,4 +15,4 @@ urlpatterns = [
     url('^job_info/(?P<jid>\d+)/$', views.job_info_detail, name='job_info_detail'),
     url('^my_submit/$', views.my_submit, name='my_submit'),
     url('^my_comment/$', views.my_comment, name='my_comment'),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -158,12 +158,23 @@ def get_lava_device_type():
 
     return tuple(l)
 
+def get_white_list():
+    url = 'http://10.29.60.67:8080/tjxt/index/get_white_list_pac_info'
+    data = requests.get(url).json()['data']
+    l = []
+    for i in data:
+        l.append((i, i))
+
+    return tuple(l)
+
 class LavaDeviceType(models.Model):
 
     LAVA_DEVICE_TYPE_CHOICE = get_lava_device_type()
+    PAC_URL_LIST = get_white_list()
+
     name = models.CharField(max_length=8*8, choices=LAVA_DEVICE_TYPE_CHOICE)
     date_time = models.DateTimeField(auto_now=True)
-    pac_url = models.CharField(max_length=256, default='')
+    pac_url = models.CharField(max_length=256, default='', choices=PAC_URL_LIST)
     template = models.TextField(max_length=1024*10, default='')
     deploy_imgs = models.ManyToManyField('DelployImgs')
     description = models.CharField(max_length=512, default='')
