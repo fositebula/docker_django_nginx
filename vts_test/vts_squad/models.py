@@ -95,7 +95,7 @@ class Job(models.Model):
 
     vts_version = models.ForeignKey('VtsVersion')
     vts_module = models.CharField(max_length=64, default='')
-    vts_log_path = models.CharField(default='', max_length=64)
+    vts_log_path = models.CharField(default='', max_length=256)
 
     device_type = models.ForeignKey('LavaDeviceType')
 
