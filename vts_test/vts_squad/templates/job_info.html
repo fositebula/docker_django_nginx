@@ -140,7 +140,7 @@
     </div>
      <div class="row" style="margin-top: 10px">
         <div class="col-xs-2">
-            <a href="{{ job.vts_log_path }}" class="btn btn-primary">
+            <a href="{{ job.vts_log_path }}" class="btn btn-primary {% if job.vts_log_path == '' %}disabled{% endif %}">
                 <span class="glyphicon glyphicon-download-alt"></span> VTS log
             </a>
         </div>
