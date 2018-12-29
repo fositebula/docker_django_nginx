@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import hashlib
+
+import datetime
 import requests
 
 from django.db import models
@@ -64,6 +67,9 @@ class MyUser(AbstractBaseUser):
     def is_staff(self):
         return self.is_admin
 
+def get_date_hash():
+    return hashlib.md5(datetime.datetime.now().isoformat()).hexdigest()
+
 class Job(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, default=1)
 
@@ -89,9 +95,12 @@ class Job(models.Model):
 
     vts_version = models.ForeignKey('VtsVersion')
     vts_module = models.CharField(max_length=64, default='')
+    vts_log_path = models.CharField(default='', max_length=64)
+
     device_type = models.ForeignKey('LavaDeviceType')
 
     submit_time = models.DateTimeField(auto_now=True)
+    hash_str = models.CharField(default=get_date_hash, max_length=32)
 
     def __unicode__(self):
         return self.jenkins_build_num

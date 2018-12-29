@@ -240,8 +240,6 @@ def job_submit(request):
         print vts_url.tar_url
         token = device_type.squad_api
         template = Template(device_type.template)
-        lava_job = template.render(vts_module=vts_module, vts_version=vts_url.tar_url, img_url=device_type.worker05_pac, imgs=device_type.deploy_imgs.all())
-
         try:
 
             buildinfo = BuildInfo('/'.join(verify_url.split('/')[:7]))
@@ -258,6 +256,13 @@ def job_submit(request):
             job.vts_module = vts_module
             job.save()
             print job.id
+
+            lava_job = template.render(vts_module=vts_module,
+                                       vts_version=vts_url.tar_url,
+                                       img_url=device_type.worker05_pac,
+                                       imgs=device_type.deploy_imgs.all(),
+                                       vts_hash=job.hash_str
+                                       )
 
             # http://cmverify.spreadtrum.com:8080/jenkins/job/gerrit_do_verify_sprdroidp/26393//artifact/sps.image/sprdroid9.0_trunk/sp9832e_1h10_gofu-userdebug-gms.tar.gz
             verify_url_list = verify_url.split('/')
@@ -415,3 +420,18 @@ def job_info_detail(request, jid):
 @login_required
 def my_comment(request):
     return render(request, 'my_comment.html', {})
+
+def get_vts_log(request):
+    if request.method == "POST":
+        try:
+            hash_str = request.POST.get('hash_str')
+            job = Job.objects.get(hash_str=hash_str)
+            log_path = request.POST.get('log_path')
+            job.vts_log_path = log_path
+            job.save()
+            print hash_str, log_path
+            return HttpResponse('suc')
+        except:
+            return HttpResponse(traceback.format_exc())
+    else:
+        return HttpResponse('请用POST方法!')
