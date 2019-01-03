@@ -77,6 +77,7 @@ def index(request):
                                              'page_length': page_length, 'pre_page': pre_page,
                                              'next_page': next_page, 'gonggao':gonggao})
 
+@login_required
 def my_submit(request):
     global OLD_PAGE
     print request.user
