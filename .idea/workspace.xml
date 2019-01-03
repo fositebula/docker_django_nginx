@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116d7049-3989-446f-ad6f-8dcf4363d700" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html" afterPath="$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/models.py" afterPath="$PROJECT_DIR$/vts_test/vts_squad/models.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,12 +20,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="job_info.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="145" column="14" lean-forward="true" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="457">
+              <caret line="176" column="19" lean-forward="false" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="19" />
+              <folding>
+                <element signature="e#353#818#0" expanded="false" />
+                <element signature="e#856#1486#0" expanded="false" />
+                <element signature="e#1513#1580#0" expanded="false" />
+                <element signature="e#1611#3437#0" expanded="false" />
+                <element signature="e#3472#3777#0" expanded="false" />
+                <element signature="e#3815#4027#0" expanded="false" />
+                <element signature="e#4064#4218#0" expanded="false" />
+                <element signature="e#4267#4413#0" expanded="false" />
+                <element signature="e#4452#4733#0" expanded="false" />
+                <element signature="e#4767#5233#0" expanded="false" />
+                <element signature="e#5483#6234#0" expanded="false" />
+                <element signature="e#6270#6621#0" expanded="false" />
+                <element signature="e#6656#6925#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +110,8 @@
         <option value="$PROJECT_DIR$/vts_test/vts_squad/task.py" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/views.py" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/urls.py" />
-        <option value="$PROJECT_DIR$/vts_test/vts_squad/models.py" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html" />
+        <option value="$PROJECT_DIR$/vts_test/vts_squad/models.py" />
       </list>
     </option>
   </component>
@@ -171,28 +185,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vts_squad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker_django_nginx_git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docker_django_nginx_git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vts_test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vts_squad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -769,33 +761,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="150" column="8" lean-forward="true" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="97" column="63" lean-forward="true" selection-start-line="97" selection-start-column="63" selection-end-line="97" selection-end-column="63" />
+        <state relative-caret-position="457">
+          <caret line="176" column="19" lean-forward="false" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="19" />
           <folding>
             <element signature="e#353#818#0" expanded="false" />
             <element signature="e#856#1486#0" expanded="false" />
             <element signature="e#1513#1580#0" expanded="false" />
+            <element signature="e#1611#3437#0" expanded="false" />
             <element signature="e#3472#3777#0" expanded="false" />
             <element signature="e#3815#4027#0" expanded="false" />
             <element signature="e#4064#4218#0" expanded="false" />
             <element signature="e#4267#4413#0" expanded="false" />
             <element signature="e#4452#4733#0" expanded="false" />
             <element signature="e#4767#5233#0" expanded="false" />
-            <element signature="e#5261#5447#0" expanded="false" />
-            <element signature="e#5490#6241#0" expanded="false" />
-            <element signature="e#6277#6628#0" expanded="false" />
-            <element signature="e#6663#6932#0" expanded="false" />
+            <element signature="e#5483#6234#0" expanded="false" />
+            <element signature="e#6270#6621#0" expanded="false" />
+            <element signature="e#6656#6925#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="145" column="14" lean-forward="true" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>

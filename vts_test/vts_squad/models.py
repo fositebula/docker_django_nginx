@@ -168,8 +168,8 @@ def get_lava_device_type():
     return tuple(l)
 
 def get_white_list():
-    url = 'http://10.29.60.67:8080/tjxt/index/get_white_list_pac_info'
-    data = requests.get(url).json()['data']
+    url = 'http://10.0.70.63/submitinfos/infos/list_pac_urls_j/'
+    data = requests.get(url).json().keys()
     l = []
     for i in data:
         l.append((i, i))
