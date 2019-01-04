@@ -117,7 +117,7 @@ class SquadAPIAdmin(admin.ModelAdmin):
 
 
 class JobAdmin(admin.ModelAdmin):
-    list_display = ('jenkins_job', 'jenkins_build_num', 'submit_time')
+    list_display = ('jenkins_job', 'lava_job', 'submit_time')
 
 class GongGaoAdmin(admin.ModelAdmin):
     list_display = ('name', 'update_time', )

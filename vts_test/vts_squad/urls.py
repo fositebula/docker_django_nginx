@@ -10,6 +10,7 @@ urlpatterns = [
     url('^$', views.index, name='index'),
     url('^(?P<pre_page>\d+)&(?P<next_page>\d+)$', views.index, name='index'),
     url('^submit/$', views.job_submit, name='submit'),
+    url('^pac_submit/$', views.pac_job_submit, name='pac_submit'),
     url('^resubmit/$', views.job_resubmit, name='resubmit'),
     # url('^job_info/$', views.job_info, name='job_info'),
     url('^job_info/(?P<jid>\d+)/$', views.job_info_detail, name='job_info_detail'),

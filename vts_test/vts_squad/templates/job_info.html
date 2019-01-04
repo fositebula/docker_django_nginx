@@ -40,12 +40,14 @@
         </div>
     </div>
     <div class="row">
+    {% if job.verify_url %}
         <div class="col-xs-2">
             <h4>分支和工程</h4>
         </div>
         <div class="col-xs-4">
             <h5>{{ job.verify_url | branch_project }}</h5>
         </div>
+    {% endif %}
         <div class="col-xs-2">
             <h4>vts模块</h4>
         </div>
@@ -53,14 +55,6 @@
             <h5>{{ job.vts_module }}</h5>
         </div>
     </div>
-    <!--<div class="row">-->
-        <!--<div class="col-xs-2">-->
-            <!--<form action="{% url 'resubmit' %}" method="GET">-->
-                <!--<input type="hidden" name="jid" value="{{ job.id }}">-->
-                <!--<input class="btn btn-info" type="submit" value="resubmit">-->
-            <!--</form>-->
-        <!--</div>-->
-    <!--</div>-->
 
     <hr>
     <br>
@@ -140,11 +134,12 @@
     </div>
      <div class="row" style="margin-top: 10px">
         <div class="col-xs-2">
-            <a href="{{ job.vts_log_path }}" class="btn btn-primary {% if job.vts_log_path == '' %}disabled{% endif %}">
+            <a href="{{ job.vts_log_path }}" class="btn btn-primary {% if job.vts_log_path == "" %}disabled{% endif %}">
                 <span class="glyphicon glyphicon-download-alt"></span> VTS log
             </a>
         </div>
         </div>
+
     {% endif %}
 
     <hr>
@@ -174,12 +169,6 @@
     {% endfor %}
         </tbody>
 
-{#        <div class="tr">#}
-{#            <h4 class="f_l">vts 模块名字</h4> <p class="f_r test_case_suc">pass</p>#}
-{#        </div>#}
-{#        <div class="tr">#}
-{#            <h4 class="f_l">vts 模块名字</h4> <p class="f_r test_case_fail">fail</p>#}
-{#        </div>#}
     </table>
 
     <div class="f-button">

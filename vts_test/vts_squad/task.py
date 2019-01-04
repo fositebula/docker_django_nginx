@@ -43,9 +43,22 @@ def _submit_to_squad(lava_job, qa_server_api, qa_server_base, qa_token, quiet=Fa
 
 @celery_app.task
 def submit_to_squad(jobid, verifyurl, lava_job, qa_server_api, qa_server_base, qa_token, quiet=False):
-    import os
-    print os.getcwd()
     job = Job.objects.get(id=jobid)
+    if not verifyurl:
+        like_file = StringIO(lava_job)
+        d_values = yaml.load(like_file)
+        d_values['job_name'] = 'kernel VTS {}'.format(job.vts_version)
+        like_file.close()
+        lava_job = StringIO('')
+        yaml.dump(d_values, lava_job)
+        lava_job.seek(0)
+        lava_job_str = lava_job.read()
+        res = _submit_to_squad(lava_job_str, qa_server_api, qa_server_base, qa_token)
+        job.lava_job = res
+        job.save()
+        return job.id
+
+
     verifyid, files = verify_dowloader(verifyurl)
     pre_url = 'http://worker16/static/vts_squad/android_imgs/'
 
@@ -80,3 +93,4 @@ def submit_to_squad(jobid, verifyurl, lava_job, qa_server_api, qa_server_base, q
     res = _submit_to_squad(lava_job_str, qa_server_api, qa_server_base, qa_token)
     job.lava_job = res
     job.save()
+    return job.id

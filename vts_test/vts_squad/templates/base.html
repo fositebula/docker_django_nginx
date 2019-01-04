@@ -27,7 +27,13 @@
                 <ul>
                     <li><a href="{% url 'index' %}">首页</a></li>
                     <li><a href="{% url 'my_submit' %}">我的提交</a></li>
-                    <li><a href="{% url 'submit' %}">提交job</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">提交job <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'submit' %}">verify提交</a></li>
+                        <li><a href="{% url 'pac_submit' %}">pac提交</a></li>
+                      </ul>
+                    </li>
                     <li><a href="{% url 'my_comment' %}">我的评论</a></li>
                 </ul>
             </div>

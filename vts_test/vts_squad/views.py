@@ -332,6 +332,119 @@ def job_resubmit(request):
         }
         return render(request, 'job_submit.html', message)
 
+@login_required
+def pac_job_submit(request):
+    if request.method == "GET":
+        vv = VtsVersion.objects.all()
+        pac_url = LavaDeviceType.objects.all()
+        render_body = {
+            'vts_version':vv,
+            'pac_url':pac_url
+        }
+        return render(request, 'pac_job_submit.html', render_body)
+    else:
+        vts_version = request.POST.get('vts-version')
+        vts_module = request.POST.get('vts-module')
+        pac_url = request.POST.get('pac-url')
+        pac_node = request.POST.get('pac-node')
+
+
+        if not pac_node:
+            vv = VtsVersion.objects.all()
+            message = {
+                'message': 'PAC node is required!',
+                'vts_version': vv,
+                'vts_module': vts_module,
+                'verify_url': verify_url,
+                'pac_url': LavaDeviceType.objects.all()
+            }
+            return render(request, 'job_submit.html', message)
+        if not vts_version:
+            vv = VtsVersion.objects.all()
+            message = {
+                'message':'vts version is required!',
+                'vts_version': vv,
+                'vts_module': vts_module,
+                'verify_url': verify_url,
+                'pac_url': LavaDeviceType.objects.all()
+            }
+            return render(request, 'job_submit.html', message)
+        if not vts_module:
+            vv = VtsVersion.objects.get(id=vts_version)
+            message = {
+                'message':'vts module is required!',
+                'vts_version': vv,
+                'vts_v': VtsVersion.objects.get(id=vts_version),
+                'vts_module': vts_module,
+                'verify_url': verify_url,
+                'pac_url': LavaDeviceType.objects.all()
+            }
+            return render(request, 'job_submit.html', message)
+        if not pac_url:
+            vv = VtsVersion.objects.get(id=vts_version)
+            message = {
+                'message':'pac url is required!',
+                'vts_version': vv,
+                'vts_v': VtsVersion.objects.get(id=vts_version),
+                'vts_module': vts_module,
+                'verify_url': verify_url,
+                'pac_url': LavaDeviceType.objects.all()
+            }
+            return render(request, 'job_submit.html', message)
+
+        try:
+            device_type = LavaDeviceType.objects.get(id=pac_url)
+        except LavaDeviceType.DoesNotExist:
+            vv = VtsVersion.objects.all()
+            message= {
+                'message': 'Not device type for %s'%pac_url,
+                'vts_version':vv,
+                'vts_v': VtsVersion.objects.get(id=vts_version),
+                'vts_module': vts_module,
+                'pac_url': LavaDeviceType.objects.all()
+            }
+            return render(request, 'job_submit.html', message)
+
+        vts_url = VtsVersion.objects.get(id=vts_version)
+        print vts_url.tar_url
+        token = device_type.squad_api
+        template = Template(device_type.template)
+        try:
+
+            job = Job(user=request.user, vts_version=VtsVersion.objects.get(id=vts_version),
+                      device_type=device_type, vts_module=vts_module)
+
+            job.save()
+
+            print job.id
+            print device_type.worker05_pac.format(pac_node)
+
+            lava_job = template.render(vts_module=vts_module,
+                                       vts_version=vts_url.tar_url,
+                                       img_url=device_type.worker05_pac.format(pac_node),
+                                       imgs=device_type.deploy_imgs.all(),
+                                       vts_hash=job.hash_str
+                                       )
+
+            squad_job_name = pac_node+'_'+vts_module
+            print squad_job_name
+            res = submit_to_squad.delay(job.id, '', \
+                                        lava_job, device_type.squad_api.api.format(qa_server_build=squad_job_name), \
+                                        'http://10.0.70.105:8000', \
+                                        token.token)
+
+            return render(request, 'successfully.html', {'result':res})
+        except:
+            vv = VtsVersion.objects.all()
+            message = {
+                'message':traceback.format_exc(),
+                    'vts_v': VtsVersion.objects.get(id=vts_version),
+                    'vts_version':vv,
+                    'vts_module': vts_module,
+                'pac_url': LavaDeviceType.objects.all()
+            }
+            return render(request, 'job_submit.html', message)
+
 def job_info(request):
 
     return render(request, 'job_info.html', {})
