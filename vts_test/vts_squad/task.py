@@ -47,7 +47,7 @@ def submit_to_squad(jobid, verifyurl, lava_job, qa_server_api, qa_server_base, q
     if not verifyurl:
         like_file = StringIO(lava_job)
         d_values = yaml.load(like_file)
-        d_values['job_name'] = 'kernel VTS {}'.format(job.vts_version)
+        d_values['job_name'] = 'kernel VTS {}'.format(job.vts_module)
         like_file.close()
         lava_job = StringIO('')
         yaml.dump(d_values, lava_job)
