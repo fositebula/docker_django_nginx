@@ -19,7 +19,7 @@
                 submit id
             </th>
             <th>
-                verify id
+                vts module
             </th>
             <th>
                 lava job id
@@ -36,7 +36,7 @@
         {% for job in jobs %}
             <tr>
                 <td>{{ job.id }}</td>
-                <td><a href="{% url 'job_info_detail' job.id %}" >{{ job.jenkins_build_num |cut:"['"|cut:"']" }}</a></td>
+                <td><a href="{% url 'job_info_detail' job.id %}" >{{ job.vts_module }}</a></td>
                 <td>{{ job.get_lava_job_id }}</td>
 
                 <td>{{ job.user }}</td>
