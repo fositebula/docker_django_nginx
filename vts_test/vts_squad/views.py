@@ -436,3 +436,31 @@ def get_vts_log(request):
             return HttpResponse(traceback.format_exc())
     else:
         return HttpResponse('请用POST方法!')
+
+def pac_node_spider(url, target_url):
+    from bs4 import BeautifulSoup
+    #http://worker05:8080/download-lava/autodaily/verify_daily_pac_sharkl3/54/target/
+    url = '/'.join(url.split('/')[:-3])
+    r = requests.get(url)
+    bs = BeautifulSoup(r.content, 'lxml')
+    nodes = []
+    for i in bs.select('table [align=left] tt'):
+        if '.log' in i.get_text():
+            # print i.parent.get('href')
+            node_num = i.get_text().split('.')[0]
+            download_url = next(requests.get(url+'/'+i.get_text()).iter_lines())
+            if target_url.replace('lastBuild', node_num) in download_url:
+                nodes.append(node_num)
+
+    nodes.sort()
+    return nodes
+
+def get_pac_nodes(request):
+    if request.method == "GET":
+        lava_device_type_id = request.GET.get('lava_device_type_id')
+        lava_device_type = LavaDeviceType.objects.get(id=lava_device_type_id)
+        nodes_l = pac_node_spider(lava_device_type.worker05_pac, lava_device_type.pac_url)
+
+        return JsonResponse({'nodes': ','.join(nodes_l)})
+    else:
+        return JsonResponse({})

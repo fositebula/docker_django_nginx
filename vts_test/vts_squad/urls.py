@@ -16,4 +16,5 @@ urlpatterns = [
     url('^my_submit/$', views.my_submit, name='my_submit'),
     url('^my_comment/$', views.my_comment, name='my_comment'),
     url('^get_vts_log_path/$', views.get_vts_log, name='get_vts_log'),
+    url('^get_pac_nodes/', views.get_pac_nodes, name='get_pac_nodes'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
