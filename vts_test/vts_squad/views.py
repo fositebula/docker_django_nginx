@@ -25,6 +25,8 @@ from task import submit_to_squad
 from BuildInfo import BuildInfo
 from verify_downloader import DOWNLOAD_DIR
 
+from bs4 import BeautifulSoup
+
 ITEM_NUM = 20
 OLD_PAGE = 0
 # Create your views here.
@@ -551,7 +553,6 @@ def get_vts_log(request):
         return HttpResponse('请用POST方法!')
 
 def pac_node_spider(url, target_url):
-    from bs4 import BeautifulSoup
     #http://worker05:8080/download-lava/autodaily/verify_daily_pac_sharkl3/54/target/
     url = '/'.join(url.split('/')[:-3])
     r = requests.get(url)

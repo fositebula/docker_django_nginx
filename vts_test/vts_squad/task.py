@@ -54,6 +54,7 @@ def submit_to_squad(jobid, verifyurl, lava_job, qa_server_api, qa_server_base, q
         lava_job.seek(0)
         lava_job_str = lava_job.read()
         res = _submit_to_squad(lava_job_str, qa_server_api, qa_server_base, qa_token)
+        job.lava_job_yaml = lava_job_str
         job.lava_job = res
         job.save()
         return job.id

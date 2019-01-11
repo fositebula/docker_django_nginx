@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116d7049-3989-446f-ad6f-8dcf4363d700" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/templates/job_submit.html" afterPath="$PROJECT_DIR$/vts_test/vts_squad/templates/job_submit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/templates/my_submit.html" afterPath="$PROJECT_DIR$/vts_test/vts_squad/templates/my_submit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/templates/pac_job_submit.html" afterPath="$PROJECT_DIR$/vts_test/vts_squad/templates/pac_job_submit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/task.py" afterPath="$PROJECT_DIR$/vts_test/vts_squad/task.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vts_test/vts_squad/views.py" afterPath="$PROJECT_DIR$/vts_test/vts_squad/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,52 +22,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/task.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="49" column="68" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my_submit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/my_submit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="job_submit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/job_submit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="77" lean-forward="false" selection-start-line="7" selection-start-column="77" selection-end-line="7" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pac_job_submit.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/pac_job_submit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="78" lean-forward="false" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="job_info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="162" column="30" lean-forward="false" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="621">
+              <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+                <element signature="e#769#2372#0" expanded="false" />
+                <element signature="e#2418#3795#0" expanded="false" />
+                <element signature="e#3866#11096#0" expanded="false" />
+                <element signature="e#11145#12938#0" expanded="false" />
+                <element signature="e#12989#17473#0" expanded="false" />
+                <element signature="e#13512#13869#0" expanded="false" />
+                <element signature="e#13910#14269#0" expanded="false" />
+                <element signature="e#14309#14746#0" expanded="false" />
+                <element signature="e#14783#15217#0" expanded="false" />
+                <element signature="e#17503#17546#0" expanded="false" />
+                <element signature="e#18529#18814#0" expanded="false" />
+                <element signature="e#18946#20276#0" expanded="false" />
+                <element signature="e#20296#20788#0" expanded="false" />
+                <element signature="e#20835#20880#0" expanded="false" />
+                <element signature="e#20912#21372#0" expanded="false" />
+                <element signature="e#22058#22424#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,15 +124,15 @@
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templatetags/vts_squad_cut.py" />
         <option value="$PROJECT_DIR$/vts_test/requirements.txt" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/admin.py" />
-        <option value="$PROJECT_DIR$/vts_test/vts_squad/views.py" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/urls.py" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templates/base.html" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templates/job_list.html" />
-        <option value="$PROJECT_DIR$/vts_test/vts_squad/task.py" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templates/my_submit.html" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templates/job_submit.html" />
         <option value="$PROJECT_DIR$/vts_test/vts_squad/templates/pac_job_submit.html" />
+        <option value="$PROJECT_DIR$/vts_test/vts_squad/task.py" />
+        <option value="$PROJECT_DIR$/vts_test/vts_squad/views.py" />
       </list>
     </option>
   </component>
@@ -166,9 +144,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -186,7 +164,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -255,6 +232,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -557,17 +535,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22603878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13795014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.028421052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -712,37 +690,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/pac_submit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/pac_submit.html" />
     <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/static/vts_squad/js/jquery.blockui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1546571240000" expanded="true" signature="9674:9791" ph="..." />
-            <marker date="1546571240000" expanded="true" signature="9881:9893" ph="..." />
-            <marker date="1546571240000" expanded="true" signature="9998:10030" ph="..." />
-            <marker date="1546571240000" expanded="true" signature="10105:10204" ph="..." />
-            <marker date="1546571240000" expanded="true" signature="10354:10400" ph="..." />
-            <marker date="1546571240000" expanded="true" signature="10532:10538" ph=" " />
-            <marker date="1546571240000" expanded="true" signature="10786:10835" ph="..." />
-            <marker date="1546571240000" expanded="true" signature="10967:10973" ph=" " />
-            <marker date="1546571240000" expanded="true" signature="11178:11224" ph="..." />
-            <marker date="1546571240000" expanded="true" signature="11327:11376" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,21 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-          <folding>
-            <element signature="e#353#818#0" expanded="false" />
-            <element signature="e#856#1486#0" expanded="false" />
-            <element signature="e#1513#1580#0" expanded="false" />
-            <element signature="e#1611#3437#0" expanded="false" />
-            <element signature="e#3472#3777#0" expanded="false" />
-            <element signature="e#3815#4027#0" expanded="false" />
-            <element signature="e#4064#4218#0" expanded="false" />
-            <element signature="e#4267#4413#0" expanded="false" />
-            <element signature="e#4452#4733#0" expanded="false" />
-            <element signature="e#4767#5233#0" expanded="false" />
-            <element signature="e#5261#5440#0" expanded="false" />
-            <element signature="e#6270#6621#0" expanded="false" />
-            <element signature="e#6656#6925#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="119" column="44" lean-forward="false" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,32 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="12" column="66" lean-forward="false" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="445" column="62" lean-forward="false" selection-start-line="445" selection-start-column="62" selection-end-line="445" selection-end-column="62" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-            <element signature="e#738#2341#0" expanded="false" />
-            <element signature="e#2387#3764#0" expanded="false" />
-            <element signature="e#3835#11065#0" expanded="false" />
-            <element signature="e#11114#12907#0" expanded="false" />
-            <element signature="e#12958#17442#0" expanded="false" />
-            <element signature="e#13481#13838#0" expanded="false" />
-            <element signature="e#13879#14238#0" expanded="false" />
-            <element signature="e#14278#14715#0" expanded="false" />
-            <element signature="e#14752#15186#0" expanded="false" />
-            <element signature="e#17472#17515#0" expanded="false" />
-            <element signature="e#17556#20757#0" expanded="false" />
-            <element signature="e#20804#20849#0" expanded="false" />
-            <element signature="e#20881#21341#0" expanded="false" />
-            <element signature="e#21385#22027#0" expanded="false" />
-            <element signature="e#22061#22427#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,29 +766,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="49" column="68" lean-forward="false" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/my_submit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="1265">
+          <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/job_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
+        <state relative-caret-position="3726">
           <caret line="162" column="30" lean-forward="false" selection-start-line="162" selection-start-column="30" selection-end-line="162" selection-end-column="30" />
           <folding />
         </state>
@@ -899,9 +795,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/templates/pac_job_submit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="78" lean-forward="false" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        <state relative-caret-position="368">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vts_test/vts_squad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#769#2372#0" expanded="false" />
+            <element signature="e#2418#3795#0" expanded="false" />
+            <element signature="e#3866#11096#0" expanded="false" />
+            <element signature="e#11145#12938#0" expanded="false" />
+            <element signature="e#12989#17473#0" expanded="false" />
+            <element signature="e#13512#13869#0" expanded="false" />
+            <element signature="e#13910#14269#0" expanded="false" />
+            <element signature="e#14309#14746#0" expanded="false" />
+            <element signature="e#14783#15217#0" expanded="false" />
+            <element signature="e#17503#17546#0" expanded="false" />
+            <element signature="e#18529#18814#0" expanded="false" />
+            <element signature="e#18946#20276#0" expanded="false" />
+            <element signature="e#20296#20788#0" expanded="false" />
+            <element signature="e#20835#20880#0" expanded="false" />
+            <element signature="e#20912#21372#0" expanded="false" />
+            <element signature="e#22058#22424#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
