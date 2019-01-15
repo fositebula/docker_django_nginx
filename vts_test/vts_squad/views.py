@@ -562,7 +562,8 @@ def pac_node_spider(url, target_url):
         if '.log' in i.get_text():
             # print i.parent.get('href')
             node_num = i.get_text().split('.')[0]
-            download_url = next(requests.get(url+'/'+i.get_text()).iter_lines())
+            res = requests.get(url+'/'+i.get_text())
+            download_url = next(res.iter_lines())
             if target_url.replace('lastBuild', node_num) in download_url:
                 nodes.append(node_num)
 

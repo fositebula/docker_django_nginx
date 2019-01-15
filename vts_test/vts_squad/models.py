@@ -181,9 +181,9 @@ class LavaDeviceType(models.Model):
     LAVA_DEVICE_TYPE_CHOICE = get_lava_device_type()
     PAC_URL_LIST = get_white_list()
 
-    name = models.CharField(max_length=8*8, choices=LAVA_DEVICE_TYPE_CHOICE)
+    name = models.CharField(max_length=8*8)
     date_time = models.DateTimeField(auto_now=True)
-    pac_url = models.CharField(max_length=256, default='', choices=PAC_URL_LIST)
+    pac_url = models.CharField(max_length=256, default='')
     template = models.TextField(max_length=1024*10, default='')
     deploy_imgs = models.ManyToManyField('DelployImgs')
     description = models.CharField(max_length=512, default='')
