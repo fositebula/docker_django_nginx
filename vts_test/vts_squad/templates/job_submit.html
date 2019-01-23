@@ -24,8 +24,8 @@
                         {% if vts_v %}
                         <option value="{{ vts_v.id }}" selected="selected">{{ vts_v }}</option>
                         {% else %}
-                            {% for foo in vts_version %}
                                 <option value="">-----------------------------------</option>
+                            {% for foo in vts_version %}
                                 <option value="{{ foo.id }}">{{ foo }}</option>
                             {% endfor %}
                         {% endif %}
