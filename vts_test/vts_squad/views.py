@@ -499,9 +499,12 @@ def job_info_detail(request, jid):
                 lava_job_case_result_y = server.results.get_testsuite_results_yaml(lava_job_id, name)
                 status_strIO = StringIO(lava_job_case_result_y)
                 lava_job_case_result_d = yaml.load(status_strIO)
-                vts_log_path = yaml.load(server.results.get_testcase_results_yaml(lava_job_id,
+                try:
+                    vts_log_path = yaml.load(server.results.get_testcase_results_yaml(lava_job_id,
                                                                                   name,
                                                                                   'test-attachment'))[0]['metadata']['reference']
+                except:
+                    vts_log_path = ''
 
         if lava_job_log.status_code > 300:
             lava_job_log = 'LAVA job not starting, please wait!'
