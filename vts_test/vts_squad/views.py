@@ -136,6 +136,7 @@ def job_submit(request):
         vts_module = request.POST.get('vts-module')
         verify_url = request.POST.get('verify-url')
         pac_url = request.POST.get('pac-url')
+        pac_node = request.POST.get('pac-node')
 
         if not vts_version:
             vv = VtsVersion.objects.all()
@@ -259,10 +260,11 @@ def job_submit(request):
             job.vts_module = vts_module
             job.save()
             print job.id
+            img_url = device_type.worker05_pac.format(pac_node)
 
             lava_job = template.render(vts_module=vts_module,
                                        vts_version=vts_url.tar_url,
-                                       img_url=device_type.worker05_pac,
+                                       img_url=img_url,
                                        imgs=device_type.deploy_imgs.all(),
                                        vts_hash=job.hash_str
                                        )
