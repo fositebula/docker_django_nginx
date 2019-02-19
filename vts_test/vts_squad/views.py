@@ -419,11 +419,12 @@ def pac_job_submit(request):
             job.save()
 
             print job.id
-            print device_type.worker05_pac.format(pac_node)
+            img_url = device_type.worker05_pac.format(pac_node)
+            print img_url
 
             lava_job = template.render(vts_module=vts_module,
                                        vts_version=vts_url.tar_url,
-                                       img_url=device_type.worker05_pac.format(pac_node),
+                                       img_url=img_url,
                                        imgs=device_type.deploy_imgs.all(),
                                        vts_hash=job.hash_str
                                        )
